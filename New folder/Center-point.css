@@ -1,0 +1,137 @@
+body {
+    margin: 0px;
+    background-color: rgba(128, 128, 128, 0.288);
+}
+
+#card {
+    border: 1px solid rgba(128, 128, 128, 0.288);
+    background-color: white;
+    border-radius: 25px;
+    width: 40%;
+    height: 600px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px black;
+}
+
+#for-img {
+    border-radius: 25px;
+    background-image: url(./for-center-point-project.png);
+    background-size: cover;
+    background-color: rgba(45, 218, 45, 0.575);
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+    height: 400px;
+}
+
+.min-free {
+    position: relative;
+    top: -26px;
+    left: 420px;
+    text-align: center;
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline;
+    border-radius: 5px;
+    padding: 4px 10px 4px 5px ;
+    font-size: 20px;
+}
+
+.off-up {
+    position: relative;
+    top: 330px;
+    background-color: rgba(0, 0, 255, 0.705);
+    color: white;
+    display: inline;
+    text-align: center;
+    padding: 4px 10px 4px 5px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+
+.promot {
+    position: relative;
+    top: 16px;
+    left: 16px;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding: 4px 10px 4px 10px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    opacity: .9;
+    display: inline;
+    border-radius: 5px;
+}
+
+h1 {
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    margin: 0px;
+}
+
+h2 {
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    color: rgba(0, 0, 0, 0.712);
+    margin: 0px;
+    padding-top: 3px;
+    padding-bottom: 16px;
+
+}
+
+.content1 {
+    padding: 13px;
+    padding-bottom: 3px;
+    margin-bottom: 0px;
+}
+
+.content2 {
+    padding: 0px 13px 0px 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    
+}
+
+
+.for-safe {
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    background-color: rgb(17, 107, 98);
+    border-radius: 3px;
+    width: 140px;
+    height: 32px;
+
+}
+
+
+.follo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    font-weight: lighter;
+    color: rgba(0, 0, 0, 0.712);
+    padding-top: 3px;
+    padding-bottom: 10px;
+    margin: 20px 0px 0px 0px;
+}
+
+.deli {
+    color: white;
+    font-weight: lighter;
+    margin: 0px 0px;
+    letter-spacing: 4px;
+}

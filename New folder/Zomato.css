@@ -1,0 +1,70 @@
+body {
+    margin: 0px;
+    background-image: url(./for-zomato-project.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.main-bar {
+    width: 800px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    margin: auto;
+    background-color: white;
+}
+
+
+
+.search-bar {
+    width: 450px;
+    height: 30px;
+    border: none;
+    font-size: 20px;
+}
+
+.citys {
+    width: 180px;
+    height: 30px;
+    border: none;
+    font-size: 20px;
+}
+
+input:focus {
+    outline: none;
+}
+
+option:focus {
+    outline: none;
+}
+
+select:focus {
+    outline: none;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: relative;
+    left: 35px;
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    text-shadow: ;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-weight: lighter;
+    text-align: center;
+    text-shadow: ;
+}

@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./calculator.css">
+
+</head>
+<body>
+
+
+<div class="box">
+
+<input  id="num1"  type="text" name="num1" placeholder="Enter 1st Number">
+<input id="num2" type="text" name="num2" placeholder="Enter 2nd Number">
+<div id="answer">Answer</div>
+
+
+
+<table>
+    <tr>
+        <td><button class="btn" onclick="add()">+</button></td>
+        <td><button class="btn" onclick="subtract()">-</button></td>
+    </tr>
+    <tr>
+        <td><button class="btn" onclick="multi()">*</button></td>
+        <td><button class="btn" onclick="divide()">/</button></td>
+    </tr>
+    <tr>
+        <td><button class="btn" onclick="modulus()">%</button></td>
+        <td><button class="btn" onclick="power()">x<sup>y</sup></button></td>
+    </tr>
+</table>
+
+</div>
+
+
+
+
+
+<script>
+
+    function add() {
+        var x=Number(document.getElementById("num1").value);
+        var y=Number(document.getElementById("num2").value);
+        var answer=x+y;
+        document.getElementById("answer").innerHTML=answer;
+    }
+
+    function subtract() {
+        var x=Number(document.getElementById("num1").value);
+        var y=Number(document.getElementById("num2").value);
+        var answer=x-y;
+        document.getElementById("answer").innerHTML=answer;
+    }
+
+    function multi() {
+        var x=Number(document.getElementById("num1").value);
+        var y=Number(document.getElementById("num2").value);
+        var answer=(x*y);
+        if ((answer.toString().length)<11){
+        document.getElementById("answer").innerHTML=answer;
+         }
+         else {
+        document.getElementById("answer").innerHTML= "Display Error";
+         }
+    }
+
+    function divide() {
+        var x=Number(document.getElementById("num1").value);
+        var y=Number(document.getElementById("num2").value);
+        var answer=(x/y).toFixed(6);
+        document.getElementById("answer").innerHTML=answer;
+    }
+
+    function modulus() {
+        var x=Number(document.getElementById("num1").value);
+        var y=Number(document.getElementById("num2").value);
+        var answer=x%y;
+        document.getElementById("answer").innerHTML=answer;
+    }
+
+    function power() {
+        var x=Number(document.getElementById("num1").value);
+        var y=Number(document.getElementById("num2").value);
+        var answer=x**y;
+        if ((answer.toString().length)<11){
+        document.getElementById("answer").innerHTML=answer;
+         }
+         else {
+        document.getElementById("answer").innerHTML= "Display Error";
+         }
+    }
+
+
+</script>
+
+
+    
+</body>
+</html>

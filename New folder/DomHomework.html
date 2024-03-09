@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-HomeWork</title>
+</head>
+
+<body>
+
+    <!-- ---------------------------------------------------------------------------------------------- -->
+    <!-- Change Text Content:
+     Create a webpage with a heading element (e.g., <h1>) and a button. When the button is clicked, use JavaScript to change the text of the heading. -->
+
+    <h1 id="heading1">This is heading 1</h1>
+    <button id="btn1">Click and Change Above Text</button><br>
+    <hr>
+
+    <script>
+        let but1 = document.getElementById("btn1");
+        but1.addEventListener("click", () => {
+            document.getElementById("heading1").innerHTML = "Now Heading is changed";
+        })
+    </script>
+
+
+    <!-- ---------------------------------------------------------------------------------------------- -->
+    <!-- Change Styling:
+    Create a webpage with a button. When the button is clicked, change the background color of the page using JavaScript. -->
+
+    <button id="changebgcolor" onclick="changebgcolor()"> Change Background Color</button><br>
+    <hr>
+
+    <script>
+        let changebgcolor = () => document.body.style.backgroundColor = "greenyellow";
+    </script>
+
+
+    <!-- ---------------------------------------------------------------------------------------------- -->
+    <!-- Add New Elements:
+Create a webpage with a button. When the button is clicked, use JavaScript to add a new paragraph element (<p>) to the page. -->
+
+    <button id="addNewElement">Add new Para</button>
+    <hr>
+
+    <script>
+        document.getElementById("addNewElement").addEventListener("click", () => {
+            let newPara = document.createElement("p");
+            newPara.innerHTML = "Jaipur is a beautiful city";
+            document.body.appendChild(newPara);
+        })
+    </script>
+
+
+    <!-- ---------------------------------------------------------------------------------------------- -->
+    <!-- Remove Elements: (Create a webpage with a list of items (e.g., <ul> with several <li> elements).
+Add a button that, when clicked, removes one of the list items using JavaScript.) -->
+
+
+    <!-- Dynamic List: Create a webpage with an input field and a button.
+When the button is clicked, use JavaScript to add a new item to a list (e.g., <ul>). -->
+
+    <h2>List of Items</h2>
+    <input type="text" id="carName" />
+    <button onclick="addCar()"> Add Item </button>
+    <button onclick="removeCar()"> Remove Item </button><br>
+    <ul id="carList"></ul>
+    <hr>
+
+    <script>
+        var carList = document.getElementById("carList");
+        var carName = document.getElementById("carName");
+        function addCar() {
+            var li = document.createElement("li");
+            li.setAttribute('id', carName.value);
+            let text = document.createTextNode(carName.value);
+            li.appendChild(text);
+            carList.appendChild(li);
+        }
+        function removeCar() {
+            var item = document.getElementById(carName.value);
+            carList.removeChild(item);
+        }
+    </script>
+
+
+    <!-- ---------------------------------------------------------------------------------------------- -->
+    <!-- Toggle Visibility: Create a webpage with a button and a hidden element (e.g., a <div> with display: none; in the CSS).
+When the button is clicked, use JavaScript to toggle the visibility of the hidden element. -->
+
+    <button id="btnVis" style="width: 100px;">Visible</button><br>
+    <div id="hideUnhide"
+        style="width: 750px; height: 25px; margin: 5px 0px; background-color: blueviolet; display: none;"></div>
+    <hr>
+
+    <script>
+        let btn1 = document.getElementById("btnVis");
+        btn1.addEventListener("click", () => {
+            let btnStatus = document.getElementById("btnVis").innerHTML;
+            if (btnStatus == "Visible") {
+                document.getElementById("hideUnhide").style.display = "block";
+                document.getElementById("btnVis").innerHTML = "Hide";
+            }
+
+            if (btnStatus == "Hide") {
+                document.getElementById("hideUnhide").style.display = "none";
+                document.getElementById("btnVis").innerHTML = "Visible";
+            }
+
+        })
+    </script>
+
+
+    <!-- ---------------------------------------------------------------------------------------------- -->
+    <!-- Input Value Manipulation:
+Create a webpage with an input field and a button. When the button is clicked, use JavaScript to get the value from the input field and display it on the page. -->
+
+    <input id="valMan" type="text">
+    <button id="btnvalMan">Print your input</button><br>
+    <!-- <div id="div4print" style="width: 175px; height: 20px; border: 1px solid red; display: inline-block; margin: 5px 0px; text-align: center;"></div><br> -->
+    <textarea id="div4print" cols="50" rows="1" style="margin: 6px 0px 3px"></textarea>
+    <hr>
+
+    <script>
+        let btn234 = document.getElementById("btnvalMan");
+        btn234.addEventListener("click", () => {
+            document.getElementById("div4print").innerHTML = document.getElementById("valMan").value;
+        })
+    </script>
+
+
+    <!-- ---------------------------------------------------------------------------------------------- -->
+    <!-- Event Listeners: Create a webpage with a button. Use JavaScript to add an event listener to the button so that it changes the text color when clicked. -->
+
+    <button id="forevelist" style="width: 200px; height: 30px;">Change My style</button><br>
+    <hr>
+
+    <script>
+        let newbtnstyle = document.getElementById("forevelist");
+        newbtnstyle.addEventListener("click", () => {
+            newbtnstyle.style.fontWeight = "bold";
+            newbtnstyle.style.color = "white";
+            newbtnstyle.style.backgroundColor = "green";
+            newbtnstyle.style.border = "none";
+            newbtnstyle.style.boxShadow = "5px 5px 5px black";
+            newbtnstyle.style.borderRadius = "10px";
+            newbtnstyle.style.textShadow = "5px 5px 5px black";
+        })
+    </script>
+
+
+    <!-- ---------------------------------------------------------------------------------------------- -->
+    <!-- Image Swap:
+Create a webpage with an image and a button. When the button is clicked, use JavaScript to change the image source. -->
+
+    <button id="changeimg">Change Car Image</button><br><br>
+    <div id="carimage"
+        style="width: 300px; height: 170px; background-size: 100%; background-image: url(./adv_1_corvette_z06_3-wallpaper-1366x768.jpg);">
+    </div>
+
+    <script>
+        let btncar = document.getElementById("changeimg");
+        btncar.addEventListener("click", () => {
+            let good = document.getElementById("carimage");
+            good.style.backgroundImage = "url(./porsche_carrera_gt.jpg)";
+        })
+    </script>
+
+
+    <!-- ---------------------------------------------------------------------------------------------- -->
+</body>
+
+</html>

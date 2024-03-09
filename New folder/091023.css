@@ -1,0 +1,51 @@
+.btnm {
+    width: 59px !important;
+    margin: 0px 8px !important;
+    padding: auto;
+    background-color: white;
+}
+
+.btnm:hover {
+    color: white;
+    background-color: #0d6efd;
+    border-color: white;
+}
+
+#btne {
+    background-color: rgb(19, 168, 19);
+    border: 6px solid whitesmoke ;
+    border-radius: 25px;
+    width: 130px;
+    padding: 5px 10px;
+    color: whitesmoke;
+    margin: auto;
+    position: relative;
+    top: 32px;
+}
+
+.or {
+    position: relative;
+    left: 48.5%;
+    color: rgb(0, 0, 0, 0.7);
+    top: 135px;
+    background-color: whitesmoke;
+    margin: 0px;
+    padding: 0px;
+    display: inline;
+    border: 1px solid whitesmoke;
+    
+}
+
+input.ini{
+    background-color: rgb(220, 220, 220);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.ini{
+    background-color: rgb(219, 218, 218);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.inb {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}

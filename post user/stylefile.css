@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  .user-info {
+    border: 2px solid gray;
+    box-shadow: 0px 0px 10px black;
+    padding: 20px;
+    background-color: black;
+    border-radius: 20px;
+    width: 80%;
+    margin: 30px auto;
+    margin-bottom: 20px;
+
+  }
+  h2 {
+    margin-bottom: 10px;
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  span {
+    color: greenyellow;
+    padding-left: 10px;
+  }
+
+  .user-info p {
+    margin-bottom: 10px;
+    color: white;
+    padding-left: 10px;
+    padding-top: 2px
+  }
+
+
+  .post-list {
+    /* list-style-type: none; */
+    background-color: black;
+    color: white;
+    border: 2px solid gray;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 20px;
+    padding: 20px;
+    width: 80%;
+    margin: 30px auto;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+
+  .grid-item {
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px auto ;
+    width: 90%;
+    height: 130px;
+    box-sizing: border-box;
+  }
+
+.grid-item:hover {
+    border: 5px solid greenyellow;
+  }
+
+
+  #decrement, #increment  {
+    box-sizing: border-box;
+    width: 200px;
+    padding: 5px;
+    margin: 0px 10px;
+    border-radius: 10px;
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: white;
+  }
+
+  #decrement:hover {
+    background-color: greenyellow;
+  }
+
+  #increment:hover {
+    background-color: greenyellow;
+  }
+
+  .new-w3-style1, .new-w3-style2  {
+    background-color: black;
+    color: greenyellow;
+  }
+
+  .xsize {
+    font-size: 25px;
+  }
+
+  #postImage {
+    box-sizing: border-box;
+    border: 3px solid white;
+    border-radius: 2px;
+  }

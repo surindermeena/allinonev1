@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 2px solid red;
+            padding: 0px 20px 20px 20px;
+            margin: 20px;
+        }
+
+        label, #dog {
+            width: 150px;
+            display: inline-block;
+        }
+    
+        input, label { 
+            margin: 5px 0px;
+            width: 50%;
+        }
+
+        #dis{ 
+            padding: 20px;
+        }
+
+        #btn {
+            margin: 10px 0px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+<div>
+<h1>Age calculateor</h1>
+<label for="yob"><b>Enter Year of Birth</b></label>
+<input type="text" id="yob" placeholder="Enter 4 digit, example:1901"><br>
+<label for="mob"><b>Enter Month of Birth</b></label>
+<input type="text" id="mob" placeholder="Enter number, example: 1 for January"><br>
+<button type="submit" id="btn">Buttons</button>
+</div>
+
+<div id="dis">
+    <span id="dog"><b>Present Age:</b></span><span id="display"></span>
+</div>
+
+    
+
+
+
+
+<script>
+
+
+let button = document.getElementById("btn");
+button.addEventListener("click",()=>{
+    let currentYear = new Date().getFullYear();
+    let currentMonth = new Date().getMonth();
+    let currentDate = new Date().getDate();
+
+    let yearOBirth = document.getElementById("yob").value;
+    let monthOBirth = document.getElementById("mob");
+    let yearDiff = currentYear - Number(yearOBirth);
+
+    document.getElementById("display").innerHTML = `
+    ${yearDiff} Year, \n
+    ${currentMonth-1} Months, \n
+    ${currentDate} Days`;
+
+})
+
+// let numberOfMonths = (12-monthOBirth)+((yearDiff-1)*12)+(currentMonth+1);
+</script>
+</body>
+</html>

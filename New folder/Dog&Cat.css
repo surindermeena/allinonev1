@@ -1,0 +1,41 @@
+.logo {
+    width:100px ; height: auto;
+}
+
+.btn {
+    font-size: 16px;
+}
+
+.mylink {
+    color: rgba(0, 0, 0, .55);
+}
+
+.mylink:hover {
+    color: green;
+}
+
+.active {
+    color: green;
+    border-bottom: 2px solid;
+}
+
+.material-icons {
+    font-size:22px; 
+    color: rgba(0, 0, 0, .55);
+}
+
+input[type="search"] {
+    border: 1px;
+    width: 100px;
+}
+
+.Eng-article {
+    color: green;
+  text-decoration: none;
+}
+
+.Eng-article:hover {
+    color: green;
+}
+
+
